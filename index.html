@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Direct Code Execution upgrade</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-97221023-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+  <nav class="light-green lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a href="https://summerofcode.withgoogle.com"><center><font size = "+1">Google Summer of Code 2018</font></center></a>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br>
+      <h4 class="header center black-text">Direct Code Execution upgrade</h4>
+      <div class="row center">
+        <h6 class="header col s12 light"><font color="brown">Student:</font> Sourabh Jain<br><br> <font color="brown">Mentor:</font>  Matthieu Coudron and Natale Patriciello<br><br> <font color="brown">Organization:</font> The ns-3 Network Simulator Project</h6>
+      </div> 
+      <h5><font color="brown">Project Overview</font></h5>
+      <p style="text-align:justify">In general, LKL offers userspace applications to use different kernel subsystems like the virtual file system, network stack, and scheduling. The plan is to adapt network stack functionality using LKL system call API. At the time of binary deployment over a node, DCE will load the LKL compiled binary. It then searches for sim_init function and tells to LKL the required set of function for a node. In return, LKL will give a structure of pointer to those functions so that DCE can use it later. In order to make DCE compatible with LKL, we need to adapt the host related function from LKL. There are approximately 35-40 host-related functions which are declared as structure lkl_host_operations in LKL. The objective is to redefine lkl_host_operation in the DCE environment. In addition to redefining those functions for DCE, we need to add glue to code to map LKL host functions to redefined DCE functions.</p>
+
+      <p style="text-align:justify">About my work and contributions would go here</p>
+
+      <h5><font color="brown">Deliverables</font></h5>
+      <p style="text-align:justify">TBD</p>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-green-text"><i class="material-icons">assignment_turned_in</i></h2>
+            <h5 class="center"><font color="brown">Phase 1</font><br>Title</h5>
+
+            <p class="light" style="text-align:center">Description</p>
+
+            <div class="row center">
+            <a href="#" id="download-button" class="btn-large waves-effect waves-light green">Patch</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-green-text"><i class="material-icons">assignment_turned_in</i></h2>
+            <h5 class="center"><font color="brown">Phase 2</font><br>Title</h5>
+
+            <p class="light" style="text-align:center">Description</p>
+
+            <div class="row center">
+            <a href="#" id="download-button" class="btn-large waves-effect waves-light green">Patch</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-green-text"><i class="material-icons">assignment_turned_in</i></h2>
+            <h5 class="center"><font color="brown">Phase 3</font><br>Title</h5>
+
+            <p class="light" style="text-align:center">Description</p>
+            <div class="row center">
+            <a href="#" id="download-button" class="btn-large waves-effect waves-light green">Patch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <h6><font color="brown">Steps to reproduce work done during Phase 1</font></h6>
+          <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+      <h6><font color="brown">Steps to reproduce work done during Phase 2</font></h6>
+          <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+      <h6><font color="brown">Steps to reproduce work done during Phase 3</font></h6>
+          <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+
+      <h5><font color="brown">Scope and Limitations of the Project</font></h5>
+        <p style="text-align:justify">This project can be extended further as suggested below:</p>
+          <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+
+      <h5><font color="brown">Other Resources</font></h5>
+        <p style="text-align:justify">Description</p>
+        
+        <div class="row center">
+        <a href="https://www.nsnam.org/wiki/GSoC2018_DCE_Upgrade" id="download-button" class="btn-large waves-effect waves-light green">Project Wiki</a>
+        <a href="#" id="download-button" class="btn-large waves-effect waves-light green">Source Code</a>
+        <a href="#" id="download-button" class="btn-large waves-effect waves-light green">Final Patch</a>
+
+        </div>
+    </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Acknowledgement</h5>
+          <p class="grey-text text-lighten-4">GSoC 2018</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">People</h5>
+          <ul>
+            <li><a class="white-text" href="https://github.com/sourabhjains">Sourabh Jain (Student)</a></li>
+            <li><a class="white-text" href="https://github.com/teto">Matthieu Coudron (Mentor)</a></li>
+            <li><a class="white-text" href="https://github.com/natale-p">Natale Patriciello (Mentor)</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Useful Links</h5>
+          <ul>
+            <li><a class="white-text" href="https://www.nsnam.org/wiki/GSoC2018_DCE_Upgrade">Project Wiki</a></li>
+            <li><a class="white-text" href="#">Source repository</a></li>
+            <li><a class="white-text" href="#">Open Issues</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <p><center>Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a></center></p></div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
