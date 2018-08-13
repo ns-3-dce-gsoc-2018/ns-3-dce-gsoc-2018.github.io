@@ -44,7 +44,10 @@
       <p style="text-align:justify"><b>Enabling support for DCE Host in LKL: </b>A host in LKL is basically defining a handle for lkl_host_operations. lkl_host_operation is a structure of pointer to functions of basic functions related to memory allocation, thread handling, timers, semaphore handle (mutex) and panic. In order to run the real code in a discrete time environment, all the host-related functions should be implemented using DCE version of standard functions.
 </p>
             <p style="text-align:justify"><b>NetDevice and Socket module in LKL: </b>The core network related function is implemented in Netdevice and Socket module. These modules are highly inspired from old NUSE socket and netdevice module. The NetDevice module provides a function to create a virtual network device and function to perform Rx-Tx operations on it. The Socket module helps DCE to create Linux based socket and allows to perform different operation on them. The support operation on socket includes bind, connect, listen, shutdown, getsockname, sock_sendmsg, sock_recvmsg etc.</p>
-
+            <p style="text-align:justify"><b>LKL compatible code in ns-3-dce: </b>These patches contain the module specific changes in ns-3-DCE code. These patches help LKL to use the custom implementation of standard Libc functions. The patch also introduces new function like DcePanic in ns-3-dce to handle kernel panic situation over an ns-3 node. In addition, the ns-3-dce is also made compatible with new sysctl interface of LKL.</p>
+            <p style="text-align:justify"><b>sysctl get interface in mainline LKL: </b>This patch helps DCE to extract the sysctl attribute by mounting the /proc/sys interface.
+The sysctl get interface can also be used by other components in LKL. The patch is sent to LKL team for the review.</p>
+      
     </div>
   </div>
 
