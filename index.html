@@ -43,6 +43,7 @@
       <h5><font color="brown">Deliverables</font></h5>
       <p style="text-align:justify"><b>Enabling support for DCE Host in LKL:</b> A host in LKL is basically defining a handle for lkl_host_operations. lkl_host_operation is a structure of pointer to functions of basic functions related to memory allocation, thread handling, timers, semaphore handle (mutex) and panic. In order to run the real code in a discrete time environment, all the host-related functions should be implemented using DCE version of standard functions.
 </p>
+            <p style="text-align:justify"><b>NetDevice and Socket module in LKL:</b>The core network related function is implemented in Netdevice and Socket module. These modules are highly inspired from old NUSE socket and netdevice module. The netdevice module provides a function to create a virtual network device and function to perform Rx-Tx operations on it. The Socket module helps DCE to create Linux based socket and allow to perform different operation on them. The support operation on socket includes bind, connect, listen, shutdown, getsockname, sock_sendmsg, sock_recvmsg etc.</p>
 
     </div>
   </div>
