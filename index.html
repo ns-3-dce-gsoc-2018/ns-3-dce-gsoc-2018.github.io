@@ -98,34 +98,25 @@ The sysctl get interface can also be used by other components in LKL. The patch 
     </div>
 
     <div class="section">
-      <h6><font color="brown">Steps to reproduce work done during Phase 1</font></h6>
+      <h6><font color="brown">Steps to reproduce work done on LKL</font></h6>
           <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Clone the LKL repo</li>
+            <li>Checkout to "dce-support" branch (git checkout dce-support)</li>
+            <li>Build LKL (make -C tools/lkl)</li>
           </ol>
-      <h6><font color="brown">Steps to reproduce work done during Phase 2</font></h6>
+      <h6><font color="brown">Steps to reproduce work done on ns-3-dce</font></h6>
           <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-      <h6><font color="brown">Steps to reproduce work done during Phase 3</font></h6>
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Clone the ns-3-dce repo</li>
+            <li>Checkout to “lkl-integration” branch (git checkout lkl-integration)</li>
+            <li>Build ns-3-dce (./waf)</li>
           </ol>
 
       <h5><font color="brown">Scope and Limitations of the Project</font></h5>
         <p style="text-align:justify">This project can be extended further as suggested below:</p>
           <ol>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>The network functionality of Linux kernel can be exploited using native LKL functions.</li>
+            <li>LKL provides API to set queue disciplines over the interface. This functionality can be used to provide traffic control (tc) interface in ns-3-dce.</li>
+            <li>Currently, manual settings are required to integrate LKL with ns-3-dce. These settings can be automated using the bake tool.</li>
           </ol>
 
       <h5><font color="brown">Other Resources</font></h5>
