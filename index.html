@@ -105,16 +105,34 @@ The sysctl get interface can also be used by other components in LKL. The patch 
     <div class="section">
       <h6><font color="brown">Steps to reproduce work done on LKL</font></h6>
           <ol>
-            <li>Clone my LKL repository</li>
+            <li>Clone my LKL repository (git clone https://github.com/sourabhjains/linux)</li>
             <li>Checkout to "dce-support" branch (git checkout dce-support)</li>
             <li>Build LKL (make -C tools/lkl)</li>
           </ol>
       <h6><font color="brown">Steps to reproduce work done on ns-3-dce</font></h6>
           <ol>
-            <li>Clone my ns-3-dce repository</li>
+            <li>Clone my ns-3-dce repository (git clone https://github.com/sourabhjains/ns-3-dce/)</li>
             <li>Checkout to “lkl-integration” branch (git checkout lkl-integration)</li>
             <li>Build ns-3-dce (./waf)</li>
           </ol>
+      
+    <div class="section">
+      <h6><font color="brown">Steps to view my work on LKL</font></h6>
+          <ol>
+            <li>Clone my LKL repository (git clone https://github.com/sourabhjains/linux)</li>
+            <li>Checkout to "dce-support" branch (git checkout dce-support)</li>
+            <li>Generate the consolidated patch (git diff master > lkl.patch)</li>
+            <li>Alternatively, the patch can be downloaded from <a href="https://drive.google.com/file/d/1h_bRWqL3fO4anb269wyZRucHAS615af2/view?usp=sharing">this link</a></li>
+            <li>View project statistics of my work on LKL (git diff master dce-support --stat)</li>
+          </ol>
+      <h6><font color="brown">Steps to reproduce work done on ns-3-dce</font></h6>
+          <ol>
+            <li>Clone my ns-3-dce repository (git clone https://github.com/sourabhjains/ns-3-dce/)</li>
+            <li>Checkout to “lkl-integration” branch (git checkout lkl-integration)</li>
+            <li>Generate the consolidated patch (git diff master > dce.patch)</li>
+            <li>Alternatively, the patch can be downloaded from this link</li>
+            <li>View project statistics of my work on DCE (git diff master lkl-integration --stat)</li>
+          </ol>    
 
       <h5><font color="brown">Scope and Limitations of the Project</font></h5>
         <p style="text-align:justify">This project can be extended further as suggested below:</p>
